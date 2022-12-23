@@ -17,6 +17,7 @@ const RouterComponents = () => {
         <HeaderComponents/>
             <Routes>
                 <Route path="/" element={<HomeContainer/>}/>
+                <Route path="/movies-app" element={<HomeContainer/>}/>
                 <Route path="/About" element={<AboutContainer/>}/>
                 <Route path="/Movies" element={<MoviesContainer/>}/>
                 <Route path="/Contact" element={<ContactContainer/>}/>
