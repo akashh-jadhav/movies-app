@@ -20,7 +20,7 @@ const HeaderComponents = () => {
     <header  className='header'>
     <Navbar bg="dark" expand="lg">
         <Container>
-            <Navbar.Brand href='/'>
+            <Navbar.Brand>
             MOVIES MANIA
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navScroll" />
