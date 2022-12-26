@@ -1,5 +1,5 @@
 import React from 'react'
-import {HashRouter, Route, Routes} from "react-router-dom"
+import {BroweserRouter, Route, Routes} from "react-router-dom"
 import HomeContainer from '../Home'
 import MoviesContainer from "../Movies"
 import AboutContainer from "../About"
@@ -13,11 +13,11 @@ import FooterComponents from "../Components/Footer"
 const RouterComponents = () => {
   return (
     <>
-        <HashRouter>
+        <BroweserRouter basename="/movies-app">
         <HeaderComponents/>
             <Routes>
-                <Route path="/movies-app/" element={<HomeContainer/>}/>
-                <Route path="/" element={<HomeContainer/>}/>
+                <Route path="/movies-app" element={<HomeContainer/>}/>
+                <Route path="/movies-app" element={<HomeContainer/>}/>
                 <Route path="/About" element={<AboutContainer/>}/>
                 <Route path="/Movies" element={<MoviesContainer/>}/>
                 <Route path="/Contact" element={<ContactContainer/>}/>
@@ -26,7 +26,7 @@ const RouterComponents = () => {
                 <Route path="/Details/:movieid/:mediatype" element={<DetailContainer/>}/>
             </Routes>
             <FooterComponents/>
-        </HashRouter>
+        </BroweserRouter>
     </>
   )
 }
